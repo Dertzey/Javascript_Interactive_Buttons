@@ -8,12 +8,15 @@
     <button onclick="
         console.log(`Cart quantity: ${cartQuantity}`);
         ">Show Quantity</button>
-    <button onclick="cartQuantity = cartQuantity + 1;
-    console.log(`Cart quantity: ${cartQuantity}`);">Add to Cart</button>
-    <button onclick="
-    console.log(`${cartQuantity = cartQuantity + 2}`)">+2</button>
-    <button onclick="
-    console.log(`${cartQuantity = cartQuantity + 3}`)">+3</button>
+    <button onclick=" cartQuantity++; console.log(`Cart quantity: ${cartQuantity}`);">Add to Cart</button>
+    <button onclick="cartQuantity--; console.log(`Cart quantity: ${cartQuantity}`)">Remove from Cart</button>
+    <button onclick="console.log(`${cartQuantity-=2}`)">-2</button>
+    <button onclick="console.log(`${cartQuantity -=3}`)">-3</button>
+    <button onclick="console.log(`${cartQuantity+=2}`)">+2</button>
+    <button onclick="console.log(`${cartQuantity = cartQuantity+=3}`)">+3</button>
+    <button onclick="console.log(`${cartQuantity +=4}`)">+4</button>
+    <button onclick="console.log(`${cartQuantity +=5}`)">+5</button>
     <button onclick="console.log('Cart was reset.'); console.log(`${cartQuantity = 0}`);">Reset Cart</button>
+
   </body>
 </html>
