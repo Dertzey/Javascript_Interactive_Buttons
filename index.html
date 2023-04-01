@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Buttons js interactions</title>
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <button onclick="
+        console.log(`Cart quantity: ${cartQuantity}`);
+        ">Show Quantity</button>
+    <button onclick="cartQuantity = cartQuantity + 1;
+    console.log(`Cart quantity: ${cartQuantity}`);">Add to Cart</button>
+    <button onclick="
+    console.log(`${cartQuantity = cartQuantity + 2}`)">+2</button>
+    <button onclick="
+    console.log(`${cartQuantity = cartQuantity + 3}`)">+3</button>
+    <button onclick="console.log('Cart was reset.'); console.log(`${cartQuantity = 0}`);">Reset Cart</button>
+  </body>
+</html>
